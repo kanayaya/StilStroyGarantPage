@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Обратная связь - СтильСтрой-Гарант{% endblock %}
+
+{% block banner%}
+    <div class="banner">
+        <script type="text/javascript" charset="utf-8" class="banner" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add21e24527e4626186834236a03df1c066720b0a30e25a3883691dd7ca964205&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <h2>Контакты</h2>
+
+    <article>
+        <h3>Анна</h3>
+        <p>менеджер по продажам</p>
+        <p><a href="tel:+73952950245">+7 (3952) 95-02-45</a></p>
+        <p>НАПИСАТЬ</p>
+        <h3>Офис и склад</h3>
+        <p>г. Шелехов, тр. Култукский, 21, офис 26,30</p>
+        <p>пн-пт 9:00-18:00, без перерыва</p>
+        <p><a href="tel:+73952722080">+7 (3952) 72 - 20 - 80</a></p>
+        <p><a href="mailto:ssg-office@yandex.ru">ssg-office@yandex.ru</a></p>
+        <p><a href="{% url 'index' %}">http://www.стильстрой-гарант.рф/</a></p>
+    </article>
+{% endblock %}

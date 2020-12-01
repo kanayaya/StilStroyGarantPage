@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <title>{% block title %}{% endblock %}</title>
+       <link rel="shortcut icon" href="{% static "images/iconS.png" %}" type="image/x-icon" />
+       <link rel="stylesheet" href="{% static "css/aastyle.css" %}">
+
+   </head>
+   <body>
+        <div>
+            <header class="header">
+                <nav>
+                    <div class="navpanel">
+                        <div class="logo">
+                            <a href="{% url 'index' %}"><img src="{% static "images/logo.png" %}" alt="" title="На главную" height="70px"></a>
+                        </div>
+                            <a href="{% url 'index' %}" class="navbtn">ГЛАВНАЯ</a>
+                            <a href="{% url 'about' %}" class="navbtn">О КОМПАНИИ</a>
+                            <a href="{% url 'product' %}" class="navbtn">КОМПЛЕКСНАЯ БЕЗОПАСНОСТЬ ЗДАНИЙ И СООРУЖЕНИЙ</a>
+                            <a href="{% url 'license' %}" class="navbtn">ЛИЦЕНЗИИ</a>
+                            <a href="{% url 'contact' %}" class="navbtn">ОБРАТНАЯ СВЯЗЬ</a>
+                    </div>
+                </nav>
+
+                <h1 class="main-title">ООО СтильСтрой-Гарант</h1>
+
+                <h2><a href="tel:+73952722080">+7 (3952) 72 - 20 - 80</a></h2>
+                <div>
+                    <a href="mailto:ssg-office@yandex.ru">ssg-office@yandex.ru</a>
+                </div>
+                <div class="redbtn">
+                    <a href="#">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a>
+                </div>
+                <div class="graybtn">
+                    <a href="#">НАПИСАТЬ СООБЩЕНИЕ</a>
+                </div>
+
+             </header>
+            <main>
+                <div class="main-content-sidebars">
+                    <aside class="left-aside">
+                        <p>Найти товар или услугу… Поиск</p>
+                        <p>Правда о компании</p>
+                        <p>Комплексная безопасность зданий и сооружений 162</p>
+                        <p>Противопожарные преграды</p>
+                        <p>Промышленные преграды</p>
+                        <p>Защитные преграды</p>
+                        <p>Рентгенозащитные преграды</p>
+                        <p>Качественные двери для дома и квартиры</p>
+                        <p>Для ваших дверей</p>
+                        <p>Услуги монтажа систем безопасности</p>
+                        <p>Котельное оборудование</p>
+                        <p>Испытание и техническое обслуживание внутреннего пожарного водопровода</p>
+                        <p>Доставка и оплата</p>
+                        <p>Отзывы</p>
+                        <p>Акции</p>
+                        <p>Прайс-лист компании</p>
+                        <p>Новостная лента</p>
+                        <p>Лицензии и сертификаты</p>
+                    </aside>
+                    <div class="content">{% block content %}{% endblock %}</div>
+                    <aside class="right-aside">
+                        Боковая колонка (сайдбар)
+                    </aside>
+                </div>
+            </main>
+
+
+            <footer class="footer">
+                <p> © СтильСтрой-Гарант, 2014—2020</p>
+                <p>г. Шелехов, тр. Култукский, 21, офис 26,30</p>
+                <p> +7 (3952) 72-20-80 </p>
+                <p>Время работы:</p>
+                <p>пн-пт 9:00-18:00, без перерыва</p>
+                <p>НАПИСАТЬ НАМ</p>
+                <p>Юридический адрес: г. Шелехов, тр. Култукский, 21, офис 26,30, e-mail: ssg-office@yandex.ru +7 (3952) 72-20-80</p>
+            </footer>
+        </div>
+   </body>
+</html>

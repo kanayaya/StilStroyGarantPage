@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <title id="title">{% block title %}{% endblock %}</title>
+       <link rel="shortcut icon" href="{% static "images/iconS.png" %}" type="image/x-icon" />
+       <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+   </head>
+
+    <body class="bodyclass">
+        <header class="headr">
+            <div class="logo">
+                <div class="burger">
+                    ---<br>---
+                </div>
+                <a href="{% url 'index' %}"><img src="{% static "images/wordlogo.png" %}" alt="" title="На главную" height="50px"></a>
+            </div>
+
+            <nav class="navpanel">
+                <a href="{% url 'index' %}" class="navbtn" id="indexnav">ГЛАВНАЯ</a>
+                <a href="{% url 'about' %}" class="navbtn" id="aboutnav">О КОМПАНИИ</a>
+                <a href="{% url 'product' %}" class="navbtn" id="productnav">КАТАЛОГ</a>
+                <a href="{% url 'license' %}" class="navbtn" id="licensenav">ЛИЦЕНЗИИ</a>
+                <a href="{% url 'contact' %}" class="navbtn" id="contactnav">ОБРАТНАЯ СВЯЗЬ</a>
+            </nav>
+
+            <div class="contact">
+                <div></div>
+                <p><a class="contact-img" href="#"><img src="{% static "images/phone.svg" %}" alt="" title="Позвонить" height="30px"></a></p>
+                <p><a class="contact-img" href="#"><img src="{% static "images/mail.svg" %}" alt="" title="Написать" height="30px"></a></p>
+            </div>
+        </header>
+
+        {% block banner %}{% endblock %}
+
+        <main class="main-content container">
+            <section class="content">
+                {% block content %}{% endblock %}
+            </section>
+            <aside class="left-aside">
+                Правая боковая колонка
+            </aside>
+        </main>
+    <script type="text/javascript" charset="utf-8" src="{% static "script/main.js" %}"></script>
+    </body>
