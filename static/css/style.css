@@ -79,10 +79,11 @@ a:active {
     transition: 100ms;
 }
 
-.navbtn-active {
-    box-shadow: inset 0px -10px 15px -3px rgba(0,0,0,0.3);
-    background-color: #f0f0f0;
-    transition: 100ms;
+.bordered {
+    border-top: 4px solid #999999;
+    border-left: 2px solid #888888;
+    box-shadow: inset 0px -15px 15px 1px rgba(0,0,0,0.08);
+    transition: 10000ms;
 }
 
 .contact {
@@ -94,7 +95,7 @@ a:active {
     padding-right: 0.5vw;
 }
 .contact-img{
-    padding: 0.5vw;
+    padding: 1.5vw 0.4vw 0.3vw;
     border: 1px solid rgba(0,0,0,0);
     border-radius: 1vh;
     transition: 300ms;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/

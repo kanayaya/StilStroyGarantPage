@@ -9,13 +9,13 @@ const title =  document.getElementById('title')
 
 console.log(title.innerText)
 if(title.innerText === 'СтильСтрой-Гарант в Иркутске') {
-    indexnav.classList.add('navbtn-active')
+    indexnav.classList.add('bordered')
 }else if (title.innerText === 'О компании - СтильСтрой-Гарант') {
-    aboutnav.classList.add('navbtn-active')
+    aboutnav.classList.add('bordered')
 }else if (title.innerText === 'Каталог - СтильСтрой-Гарант') {
-    productnav.classList.add('navbtn-active')
+    productnav.classList.add('bordered')
 }else if (title.innerText === 'Лицензии - СтильСтрой-Гарант') {
-    licensenav.classList.add('navbtn-active')
+    licensenav.classList.add('bordered')
 }else if (title.innerText === 'Обратная связь - СтильСтрой-Гарант') {
-    contactnav.classList.add('navbtn-active')
+    contactnav.classList.add('bordered')
 }
